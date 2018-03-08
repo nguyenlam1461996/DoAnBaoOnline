@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fr"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_image"
+            android:scaleType="centerCrop"
+            />
+        <ImageView
+            android:id="@+id/iv_no_image"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="100dp"
+            android:src="@drawable/no_image"
+            android:scaleType="centerCrop"
+            />
+    </FrameLayout>
+    <ProgressBar
+        android:id="@+id/progress_waiting_load_image"
+        android:padding="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_toRightOf="@+id/fr"
+        android:textSize="14sp"
+        android:text="Đội siêu mật vụ trấn áp những kẻ tấn công tổng thống Mỹ"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_name_paper"
+        android:layout_alignBottom="@id/fr"
+        android:layout_toRightOf="@+id/fr"
+        android:textSize="14sp"
+        tools:text="Dan tri"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_alignBottom="@id/fr"
+        android:textSize="12sp"
+        android:text="2017 20:18:00 +0700"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:textAlignment="viewEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item android:title="Nội dung">
+            <menu>
+        <item
+            android:id="@+id/nav_timkiem"
+            android:icon="@drawable/search"
+            android:title="Tìm kiếm" />
+        <item
+            android:id="@+id/nav_chuyenmuc"
+            android:icon="@drawable/list"
+            android:title="Tùy chọn chuyên mục" />
+        <item
+            android:id="@+id/nav_daluu"
+            android:icon="@drawable/seen"
+            android:title="Tin đã lưu" />
+        <item
+            android:id="@+id/nav_lichsu"
+            android:icon="@drawable/history"
+            android:title="Tin đã đọc" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Thiết lập">
+        <menu >
+
+            <item
+                android:id="@+id/nav_chedodem"
+                android:title="Chế độ đêm"
+                android:icon="@drawable/moon"
+                app:actionLayout="@layout/switch_item" />
+            <item
+                android:id="@+id/nav_anthanh"
+                android:title="Ẩn thanh trạng thái"
+                android:icon="@drawable/bar"
+                app:actionLayout="@layout/switchbasic_item" />
+            <item
+                android:id="@+id/nav_thongbao"
+                android:icon="@drawable/ring"
+                android:title="Nhận thông báo"
+                />
+            <item
+                android:id="@+id/nav_phatvideo"
+                android:icon="@drawable/video"
+                android:title="Tự động phát video" />
+        </menu>
+    </item>
+
+    <item android:title="Liên hệ">
+        <menu>
+            <item
+                android:id="@+id/nav_gopy"
+                android:icon="@drawable/mail"
+                android:title="Góp ý và đánh giá ứng dụng"
+                />
+            <item
+                android:id="@+id/nav_thongtintoasoan"
+                android:icon="@drawable/call"
+                android:title="Thông tin tòa soạn" />
+
+        </menu>
+    </item>
+
+</menu>
